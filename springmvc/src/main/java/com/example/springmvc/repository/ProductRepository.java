@@ -1,2 +1,9 @@
-package com.example.springmvc.repository;public interface ProductRepository {
+package com.example.springmvc.repository;
+
+import com.example.springmvc.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.UUID;
+
+public interface ProductRepository extends JpaRepository<Product, UUID> {
 }
